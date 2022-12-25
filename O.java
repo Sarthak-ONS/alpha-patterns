@@ -1,14 +1,15 @@
-public class U {
+public class O {
 
   public static void main(String[] args) {
-    int n = 8;
-    print_alphabet_U(n);
+    print_alphabet_O(10);
   }
 
-  // Below Function prints U
-  static void print_alphabet_U(int n) {
-    System.out.println("The letter 'U' is printed below \n \n \n \n");
+  static void print_alphabet_O(int n) {
+    System.out.println("The letter 'O' is printed below \n \n \n \n");
 
+    for (int j = 0; j < n; j++) {
+      if (j == n - 1) System.out.println("*"); else System.out.print("***");
+    }
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
         if (j == n - 1 || j == 0) System.out.print(
